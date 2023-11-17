@@ -35,7 +35,7 @@ def predict(customer_inputs):
 
     # Make prediction
     makeprediction = model.predict([customer_inputs])
-    confidence_factor = makeprediction[0][0] 
+  
 
     return makeprediction,confidence_factor
 
@@ -105,8 +105,7 @@ def main():
         print(numbers)
 
         user_inputs = numbers[0]
-        confidence_factor = predict(user_inputs)
-        st.write(f'Confidence Factor: {confidence_factor}')
+       
 
 
         TotalCharges=numbers[0][0]
