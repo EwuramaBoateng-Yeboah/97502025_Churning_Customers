@@ -37,7 +37,7 @@ def predict(customer_inputs):
     makeprediction = model.predict([customer_inputs])
   
 
-    return makeprediction,confidence_factor
+    return makeprediction
 
 def map_input_to_values(value, field):
     if field == 'InternetService':
